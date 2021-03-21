@@ -12,8 +12,12 @@ En este proyecto se le hicieron las pruebas a la API "https://enmanuelmedina.com
 - chai versión 4.3.4
 - chai-http versión 4.3.0
 - mocha versión 8.3.2
+- allure versión 0.0.0
+- allure-commandline versioón 2.13.8
+- allure-mocha versión 2.0.0-beta.9
 
 ## Uso
 
 - Intalar las depencias corriendo `npm install`
 - Correr las pruebas con `npm run test`
+- Correr el reporte con `npm run allure-report`
