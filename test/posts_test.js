@@ -1,3 +1,8 @@
+/**
+ * Pruebas a la API "https://enmanuelmedina.com/api/v1"
+ *
+ * @author Noreysi Escalona
+ */
 let chai = require("chai");
 let chaiHttp = require("chai-http");
 const expect = require("chai").expect;
@@ -6,6 +11,10 @@ chai.use(chaiHttp);
 const url = "https://enmanuelmedina.com/api/v1";
 
 let id;
+
+/**
+ * @description Prueba a la API para obtener todos los POST disponibles
+ */
 describe("GET all posts: ", () => {
   it("should get all posts", (done) => {
     chai
@@ -18,6 +27,9 @@ describe("GET all posts: ", () => {
   });
 });
 
+/**
+ * @description Prueba a la API para crear un POST nuevo
+ */
 describe("POST create a new post: ", () => {
   it("should create a new post", (done) => {
     chai
@@ -39,6 +51,9 @@ describe("POST create a new post: ", () => {
   });
 });
 
+/**
+ * @description Prueba a la API para crear un POST nuevo fallido
+ */
 describe("POST create a new post failed: ", () => {
   it("should send an error", (done) => {
     chai
@@ -53,6 +68,9 @@ describe("POST create a new post failed: ", () => {
   });
 });
 
+/**
+ * @description Prueba a la API para obtener un post en especifico
+ */
 describe("GET an specific publication: ", () => {
   it("should get an specific publication", (done) => {
     chai
@@ -66,6 +84,9 @@ describe("GET an specific publication: ", () => {
   });
 });
 
+/**
+ * @description Prueba a la API para actualizar  un POST en especifico
+ */
 describe("PUT for update the title of post: ", () => {
   it("should update the title of post", (done) => {
     chai
@@ -80,6 +101,9 @@ describe("PUT for update the title of post: ", () => {
   });
 });
 
+/**
+ * @description Prueba a la API para eliminar un POST en especifico
+ */
 describe("DELETE  post : ", () => {
   it("should  delete an specific post", (done) => {
     chai

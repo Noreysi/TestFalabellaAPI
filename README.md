@@ -15,9 +15,11 @@ En este proyecto se le hicieron las pruebas a la API "https://enmanuelmedina.com
 - allure versión 0.0.0
 - allure-commandline versioón 2.13.8
 - allure-mocha versión 2.0.0-beta.9
+- jsdoc 3.6.6.
 
 ## Uso
 
 - Intalar las depencias corriendo `npm install`
 - Correr las pruebas con `npm run test`
 - Correr el reporte con `npm run allure-report`
+- Correr el Jsdoc con jsdoc .\test\posts_test.js
