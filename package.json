@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec",
-    "allure-report": "allure generate --clean ./allure-results -c && allure open"
+    "test": "mocha --reporter spec",
+    "allure-report": "mocha --reporter allure-mocha && allure generate -c ./allure-results && allure open"
   },
   "author": "Noreysi Escalona",
   "license": "ISC",
